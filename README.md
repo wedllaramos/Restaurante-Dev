@@ -23,7 +23,8 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias:
 * **Menu Mobile:** Menu interativo estilo "hambúrguer" para telas menores.
 * **Animações de Scroll:** Elementos que surgem suavemente conforme o usuário navega.
 * **Sticky Header:** Navegação que permanece fixa no topo com efeito de sombra dinâmico.
-* **Seções Completas:** * **Home:** Banner de impacto com botões de chamada para ação (CTA).
+* **Seções Completas:**
+    * **Home:** Banner de impacto com botões de chamada para ação (CTA).
     * **Cardápio:** Grade de pratos detalhada com ingredientes, preços e avaliações.
     * **Avaliações:** Depoimentos de clientes com layout em cards.
     * **Footer:** Rodapé estilizado com links sociais e efeito visual em onda (SVG).
