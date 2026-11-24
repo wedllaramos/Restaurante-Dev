@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./Styles/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap"
+        rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Restaurante Dev</title>
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <i class="fa-solid fa-bowl-food" id="nav-logo">food</i>
+            <ul id="nav-list">
+                <li class="nav-item"><a href="#home">Início</a></li>
+                <li class="nav-item"><a href="#menu">Cardápio</a></li>
+                <li class="nav-item"><a href="#testimonials">Avaliações</a></li>
+            </ul>
+
+            <button class="btn-default">Peça aqui</button>
+
+            <button id="mobile-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+
+        <div id="mobile-menu">
+            <ul id="mobile-nav-list">
+                <li class="nav-item"><a href="#home">Início</a></li>
+                <li class="nav-item"><a href="#menu">Cardápio</a></li>
+                <li class="nav-item"><a href="#testimonials">Avaliações</a></li>
+            </ul>
+
+            <button class="btn-default">Peça aqui</button>
+        </div>
+    </header>
+
+    <main id="content">
+        <section id="home">
+            <div class="shape"></div>
+            <div id="cta">
+                <h1 class="title">Delícias que <span>Encantam</span> o Paladar</h1>
+                <p class="description">Descubra sabores incríveis e experiências gastronômicas inesquecíveis em nosso
+                    restaurante.</p>
+
+
+                <div id="cta-button">
+                    <button class="btn-default">Faça sua reserva</button>
+                    <a href="#" class="btn-default" id="menu-button">
+                        Veja o cardápio
+                    </a>
+                </div>
+                <div id="banner"></div>
+
+                <div class="social-media-button">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+
+            <div id="banner">
+                <img src="./img/logo.png">
+            </div>
+        </section>
+
+        <section id="menu">
+            <h2 class="section-title">Cardápio</h2>
+            <h3 class="section-subtitle">Nossos pratos especiais</h3>
+
+            <div id="dishes">
+                <div class="dish">
+
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="./img/dish.png" class="dish-image">
+
+                    <h3 class="dish-title">
+                        Poke Bowl
+                    </h3>
+
+                    <span class="dish-description">
+                        <b>Ingredientes:</b> Kani, camarões, tomates cereja, cebola roxa, sementes de gergelim preto e
+                        branco, um bolinho frito(tempurá) no topo.
+                    </span>
+
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(150+)</span>
+                    </div>
+
+                    <div class="dish-price">
+                        <h4>R$ 23,90</h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+
+                </div>
+
+                <div class="dish">
+
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="./img/dish2.png" class="dish-image">
+
+                    <h3 class="dish-title">
+                        Tostex
+                    </h3>
+
+                    <span class="dish-description">
+                        <b>Ingredientes:</b> O pão está bem marcado pela grelha, recheado com queijo derretido, presunto
+                        e frango desfiado.
+                    </span>
+
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(100+)</span>
+                    </div>
+
+                    <div class="dish-price">
+                        <h4>R$ 13,90</h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+
+                </div>
+
+                <div class="dish">
+
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="./img/dish3.png" class="dish-image">
+
+                    <h3 class="dish-title">
+                        Smoothie Bowl Verde
+                    </h3>
+
+                    <span class="dish-description">
+                        <b>Ingredientes:</b> à base de espinafre, couve e abacate com morangos fatiados, kiwi, sementes
+                        de girassol e lascas de coco seco.
+
+                        <div class="dish-rate">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span>(180+)</span>
+                        </div>
+
+                        <div class="dish-price">
+                            <h4>R$ 38,90</h4>
+                            <button class="btn-default">
+                                <i class="fa-solid fa-basket-shopping"></i>
+                            </button>
+                        </div>
+                </div>
+
+                <div class="dish">
+
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="./img/dish4.png" class="dish-image">
+
+                    <h3 class="dish-title">
+                        Yakisoba de Camarão
+                    </h3>
+
+                    <span class="dish-description">
+                        <b>Ingredientes:</b> Camarões grelhados, macarrão frito, tomates cereja, pimentão vermelho,
+                        brócolis e cebolinha picada.
+                    </span>
+
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(150+)</span>
+                    </div>
+
+                    <div class="dish-price">
+                        <h4>R$ 31,90</h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+
+                </div>
+
+                <div class="dish">
+
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="./img/dish5.png" class="dish-image">
+
+                    <h3 class="dish-title">
+                        Green Salmon Bowl
+                    </h3>
+
+                    <span class="dish-description">
+                        <b>Ingredientes:</b> Cubos de salmão fresco com quinoa, ervilhas, pepino, rabanete, abacate e
+                        toque de gergelim.
+                    </span>
+
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(150+)</span>
+                    </div>
+
+                    <div class="dish-price">
+                        <h4>R$ 49,90</h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+
+                </div>
+
+                <div class="dish">
+
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="./img/dish6.png" class="dish-image">
+
+                    <h3 class="dish-title">
+                        Tacos Dourados de Peixe com Repolho Roxo
+                    </h3>
+
+                    <span class="dish-description">
+                        <b>Ingredientes:</b> Tortilhas macias recheadas com peixe dourado, repolho roxo crocante, coco
+                        ralado e finalizadas com limão fresco.
+                    </span>
+
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(200+)</span>
+                    </div>
+
+                    <div class="dish-price">
+                        <h4>R$ 42,90</h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+
+                </div>
+
+                <div class="dish">
+
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="./img/dish7.png" class="dish-image">
+
+                    <h3 class="dish-title">
+                        Shrimp & Salmon Power Bowl
+                    </h3>
+
+                    <span class="dish-description">
+                        <b>Ingredientes:</b> Camarões grelhados e salmão temperado servidos com quinoa, edamame,
+                        abacate, legumes crocantes e molho cremoso da casa.
+                    </span>
+
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(250+)</span>
+                    </div>
+
+                    <div class="dish-price">
+                        <h4>R$ 59,90</h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials">
+            <img src="./img/chef.png" id="testimonials-chef">
+
+            <div id="testimonials-content">
+                <h2 class="section-title">
+                    Avaliações
+                </h2>
+                <h3 class="section-subtitle">
+                    O que os clientes falam sobre nós
+                </h3>
+
+                <div id="feedbacks">
+                    <div class="feedbacks">
+                        <img src="./img/client.png" class="feedback-avatar">
+
+                        <div class="feedback-content">
+                            <h4>
+                                Ana
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                            </h4>
+
+                            <p>"A experiência foi incrível! O atendimento é impecável e o tempero me lembrou a comida de casa. Com certeza voltarei mais vezes com a família."
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="feedbacks">
+                        <img src="./img/client2.png" class="feedback-avatar">
+
+                        <div class="feedback-content">
+                            <h4>
+                                Helena
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                            </h4>
+
+                            <p>
+                                "O design do restaurante é moderno e a comida é de altíssima qualidade. O prato principal estava perfeitamente equilibrado"
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="feedbacks">
+                        <img src="./img/client3.png" class="feedback-avatar">
+
+                        <div class="feedback-content">
+                            <h4>
+                                Kenji
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                            </h4>
+                                "Um ambiente muito acolhedor e elegante. Ideal para jantares de negócios ou comemorações especiais. A carta de vinhos é surpreendente."
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="feedbacks">
+                        <img src="./img/client4.png" class="feedback-avatar">
+
+                        <div class="feedback-content">
+                            <h4>
+                                Ricardo
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                            </h4>
+
+                            <p>
+                                "Melhor custo-benefício da região. Ingredientes frescos e uma apresentação de pratos que dá vontade de tirar foto de tudo antes de comer!"
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer id="footer">
+            <img src="./img/wave.svg">
+
+            <div class="footer-itens">
+                <h5 class="copyright">
+                    &copy 2025 Wedlla Ramos
+                </h5>
+
+                 <div class="social-media-button">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+
+</body>
+
+<script src="./javascript/script.js"></script>
+
+</html>
